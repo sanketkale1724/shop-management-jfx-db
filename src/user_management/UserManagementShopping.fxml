@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" fx:controller = "user_management.UserManagementController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="88.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="0.529126213592233" endY="0.043689320388349495" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#f2f2f2" />
+                  <Stop color="#f58e33" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <Button fx:id="editUser" layoutX="210.0" layoutY="202.0" mnemonicParsing="false" onAction="#ShowEditUserScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Edit User">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button fx:id="searchUser" layoutX="210.0" layoutY="284.0" mnemonicParsing="false" onAction="#ShowSearchUserScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Seach User">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button fx:id="deleteUser" layoutX="210.0" layoutY="369.0" mnemonicParsing="false" onAction="#ShowDeleteUserScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Delete User">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button fx:id="quit" layoutX="210.0" layoutY="454.0" mnemonicParsing="false" onAction="#ShowQuitScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-border-color: #D83F31;" text="Quit">
+         <font>
+            <Font size="25.0" />
+         </font></Button>
+      <Button fx:id="addUser" layoutX="210.0" layoutY="122.0" mnemonicParsing="false" onAction="#ShowAddUserScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Add User">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="77.0" layoutY="22.0" text="User Management" textFill="#fff9f9">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

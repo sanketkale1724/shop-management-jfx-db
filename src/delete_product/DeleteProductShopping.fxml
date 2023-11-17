@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane fx:id="deleteProductName" fx:controller="delete_product.DeleteProductController" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="88.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.2524271844660194" startY="0.07766990291262132">
+               <stops>
+                  <Stop color="#ee961c" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="77.0" layoutY="22.0" text="Delete Product" textFill="#f8eded">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="deleteProduct" layoutX="331.0" layoutY="144.0" prefHeight="40.0" prefWidth="480.0" />
+      <Label layoutX="77.0" layoutY="149.0" text="Product Name To Delete">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="462.0" layoutY="229.0" mnemonicParsing="false" onAction="#closeProduct" prefHeight="40.0" prefWidth="150.0" style="-fx-border-color: #D83F31;" text="Close" textFill="#eb2a2a">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="delete" layoutX="661.0" layoutY="229.0" mnemonicParsing="false" onAction="#deleteProduct" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #9FBB73; -fx-border-color: #557C55;" text="Delete" textFill="#eeecec">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

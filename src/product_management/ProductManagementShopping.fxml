@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" fx:controller="product_management.ProductManagementController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="88.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.4466019417475728" startY="0.24757281553398058">
+               <stops>
+                  <Stop color="#ee8e2d" />
+                  <Stop color="#f2f1f0" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="addProduct" layoutX="210.0" layoutY="137.0" mnemonicParsing="false" onAction="#showAddProductScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Add Product">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="editProduct" layoutX="210.0" layoutY="220.0" mnemonicParsing="false" onAction="#showEditProductScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Edit Product">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="searchProduct" layoutX="210.0" layoutY="300.0" mnemonicParsing="false" onAction="#showSearchProductScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Search Product">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="deleteProduct" layoutX="210.0" layoutY="381.0" mnemonicParsing="false" onAction="#showDeleteProductScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Delete Product">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="quit" layoutX="210.0" layoutY="460.0" mnemonicParsing="false" onAction="#showMainScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-border-color: #D83F31;" text="Quit" textFill="#ee2323">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="38.0" layoutY="22.0" text="Product Management" textFill="#f2ecec">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

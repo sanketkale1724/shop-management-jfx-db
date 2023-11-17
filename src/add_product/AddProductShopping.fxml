@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<Pane maxHeight="-Infinity" fx:controller="add_product.AddProductController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="88.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.5097087378640777">
+               <stops>
+                  <Stop color="#eb971a" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill></Rectangle>
+      <TextField fx:id="productName" layoutX="315.0" layoutY="149.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="productID" layoutX="315.0" layoutY="213.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="quantity" layoutX="315.0" layoutY="278.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="category" layoutX="315.0" layoutY="340.0" prefHeight="40.0" prefWidth="450.0" />
+      <TextField fx:id="price" layoutX="315.0" layoutY="405.0" prefHeight="40.0" prefWidth="450.0" />
+      <Label layoutX="119.0" layoutY="151.0" text="Product Name">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="119.0" layoutY="215.0" text="Product ID">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="113.0" layoutY="342.0" text="Category">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="117.0" layoutY="405.0" text="Price">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="115.0" layoutY="280.0" text="Quantity">
+         <font>
+            <Font size="25.0" />
+         </font></Label>
+      <Label layoutX="67.0" layoutY="22.0" text="Add Product" textFill="#f2eded">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <Button fx:id="close" layoutX="412.0" layoutY="486.0" mnemonicParsing="false" onAction="#goToProductManagementScreen" prefHeight="40.0" prefWidth="150.0" style="-fx-border-color: #D83F31;" text="Close" textFill="#e82121">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="save" layoutX="615.0" layoutY="486.0" mnemonicParsing="false" onAction="#saveProductDetails" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #9FBB73; -fx-border-color: #557C55;" text="Save" textFill="#fffafa">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>

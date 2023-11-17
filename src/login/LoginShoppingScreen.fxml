@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" fx:controller = "login.LoginScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="600.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="0.6990291262135923" endY="0.8446601941747574">
+               <stops>
+                  <Stop color="#d7d4d4" />
+                  <Stop color="#fcb93d" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="392.0" layoutY="198.0" prefHeight="58.0" prefWidth="166.0" text="Login" textFill="#fffdfd">
+         <font>
+            <Font name="Times New Roman Bold" size="45.0" />
+         </font>
+      </Label>
+      <TextField fx:id="loginName" layoutX="235.0" layoutY="282.0" prefHeight="36.0" prefWidth="416.0" promptText="User ID" />
+      <TextField fx:id="password" layoutX="235.0" layoutY="335.0" prefHeight="36.0" prefWidth="416.0" promptText="Password" />
+      <Button fx:id="login" layoutX="235.0" layoutY="429.0" mnemonicParsing="false" onAction="#ShowMainScreen" prefHeight="36.0" prefWidth="416.0" style="-fx-background-color: EE9322;" text="Next" />
+      <ImageView fitHeight="120.0" fitWidth="170.0" layoutX="383.0" layoutY="87.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Users/Lenovo/Downloads/cart%20img.png" />
+         </image>
+      </ImageView>
+      <Line endX="230.0" layoutX="441.0" layoutY="395.0" startX="-230.0" />
+   </children>
+</Pane>

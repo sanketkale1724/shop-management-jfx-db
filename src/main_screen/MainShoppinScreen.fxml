@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" fx:controller = "main_screen.MainScreenController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="88.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="0.44660194174757284" endY="0.24271844660194178" startX="1.0" startY="1.0">
+               <stops>
+                  <Stop color="#f5efef" />
+                  <Stop color="#eb9e2b" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Button fx:id="userManagement" layoutX="210.0" layoutY="162.0" mnemonicParsing="false" onAction="#ShowUserManagementScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="User Management">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="productManagement" layoutX="210.0" layoutY="245.0" mnemonicParsing="false" onAction="#ShowProductManagementScreen" prefHeight="55.0" prefWidth="480.0" style="-fx-background-color: #EE9322;" text="Product Management">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="Quit" layoutX="210.0" layoutY="344.0" mnemonicParsing="false" onAction="#showLoginScreeen" prefHeight="55.0" prefWidth="480.0" style="-fx-border-color: D83F31;" text="Quit">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Label layoutX="58.0" layoutY="24.0" text="Main Screen" textFill="#eeeded">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

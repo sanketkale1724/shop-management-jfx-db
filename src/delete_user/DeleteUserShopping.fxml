@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane maxHeight="-Infinity" fx:controller="delete_user.DeleteUserController" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="88.0" stroke="BLACK" strokeType="INSIDE" width="900.0">
+         <fill>
+            <LinearGradient endX="1.0" endY="1.0" startX="0.47087378640776695" startY="0.22815533980582525">
+               <stops>
+                  <Stop color="#f59a1b" />
+                  <Stop color="WHITE" offset="1.0" />
+               </stops>
+            </LinearGradient>
+         </fill>
+      </Rectangle>
+      <Label layoutX="58.0" layoutY="22.0" text="Delete User" textFill="#f8f6f6">
+         <font>
+            <Font name="Times New Roman Bold" size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="92.0" layoutY="149.0" text="User Name(Delete)">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Label>
+      <TextField fx:id="userName" layoutX="341.0" layoutY="147.0" prefHeight="40.0" prefWidth="450.0" />
+      <Button fx:id="delete" layoutX="633.0" layoutY="239.0" mnemonicParsing="false" onAction="#deleteUser" prefHeight="40.0" prefWidth="150.0" style="-fx-background-color: #9FBB73; -fx-border-color: #557C55;" text="Delete" textFill="#e8e1e1">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+      <Button fx:id="close" layoutX="428.0" layoutY="239.0" mnemonicParsing="false" onAction="#goToUserManagementScreen" prefHeight="40.0" prefWidth="150.0" style="-fx-border-color: #D83F31;" text="Close" textFill="#e41f1f">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Button>
+   </children>
+</Pane>
